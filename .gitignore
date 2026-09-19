@@ -1,0 +1,16 @@
+# Virtuelle Umgebung
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Umfragedaten koennen personenbezogene Antworten enthalten -> nicht versionieren
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
