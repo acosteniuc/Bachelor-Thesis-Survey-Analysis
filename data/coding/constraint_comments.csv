@@ -1,0 +1,52 @@
+response_id,constraint,codes
+5,Hardware limitations,Hardware & resource limits
+9,Hardware limitations,Hardware & resource limits
+9,Long system / mission lifetime,Availability & long-term operation
+9,Legacy systems,Availability & long-term operation; Legacy & reuse
+11,Hardware limitations,Hardware & resource limits
+11,Long system / mission lifetime,Availability & long-term operation
+11,Limited maintenance / updates,Constrained updates & maintenance
+11,Certification / regulation,Standards & regulatory compliance
+11,Development costs,Budget & manpower limits
+11,Schedule constraints,Schedule & time pressure; Organizational & people factors
+11,Organizational constraints,Standards & regulatory compliance
+15,Long system / mission lifetime,Availability & long-term operation
+15,Certification / regulation,Standards & regulatory compliance; Security requirements
+15,Schedule constraints,Schedule & time pressure
+18,Schedule constraints,Schedule & time pressure; Legacy & reuse
+21,Hardware limitations,Hardware & resource limits
+21,Limited maintenance / updates,Constrained updates & maintenance
+21,Certification / regulation,Standards & regulatory compliance
+21,Legacy systems,Legacy & reuse
+22,Hardware limitations,Hardware & resource limits
+22,Long system / mission lifetime,Availability & long-term operation
+22,Certification / regulation,Standards & regulatory compliance
+23,Hardware limitations,Hardware & resource limits
+23,Limited maintenance / updates,Constrained updates & maintenance
+23,Certification / regulation,Standards & regulatory compliance
+23,Development costs,Budget & manpower limits
+23,Schedule constraints,Schedule & time pressure
+23,Legacy systems,Legacy & reuse; Standards & regulatory compliance
+23,Organizational constraints,Organizational & people factors
+29,Hardware limitations,Hardware & resource limits; Data volume & scalability
+29,Organizational constraints,Security requirements; Organizational & people factors
+30,Long system / mission lifetime,Data volume & scalability
+30,Limited maintenance / updates,Constrained updates & maintenance; Availability & long-term operation
+30,Certification / regulation,Security requirements; Standards & regulatory compliance
+31,Long system / mission lifetime,Availability & long-term operation
+38,Certification / regulation,Security requirements
+38,Development costs,Budget & manpower limits; Legacy & reuse
+38,Legacy systems,Legacy & reuse
+39,Long system / mission lifetime,Availability & long-term operation
+39,Schedule constraints,Schedule & time pressure
+39,Organizational constraints,Organizational & people factors
+40,Organizational constraints,Budget & manpower limits
+41,Hardware limitations,Hardware & resource limits; Organizational & people factors
+41,Long system / mission lifetime,Availability & long-term operation
+41,Schedule constraints,Schedule & time pressure
+43,Schedule constraints,Schedule & time pressure
+44,Organizational constraints,Organizational & people factors
+46,Hardware limitations,Hardware & resource limits
+47,Long system / mission lifetime,Availability & long-term operation
+47,Legacy systems,Legacy & reuse
+48,Development costs,Budget & manpower limits
