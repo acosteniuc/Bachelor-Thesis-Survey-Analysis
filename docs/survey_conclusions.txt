@@ -1,0 +1,117 @@
+SCHLUSSFOLGERUNGEN AUS DER UMFRAGE (n = 26 abgeschlossene Antworten)
+=====================================================================
+Stand: 2026-10-10. Grundlage: Notebooks 01-03, Diagramme in outputs/figures/.
+Rücklauf: 44 geöffnet, 37 mit mindestens einer Seite, 26 abgeschlossen
+(outputs/figures/00_overview/response_flow.png). Analysebasis ist n = 26.
+
+
+1. KERNBEFUNDE
+--------------
+
+Stichprobe
+- Bildung: 18 Master, 7 PhD/Professional, 1 Bachelor.
+- Rollen: 16 Software Engineering, 5 Management, 4 Forschung/Wissenschaft, 1 Sonstige.
+- Berufserfahrung gleichmäßig verteilt (je 5 Personen in 1-5, 6-10, 11-15, 16-20, 21-30 Jahren, 1 Person 31-40).
+- Sprachen: Python 9, C++ 7, Java 3, Scala 2, je 1 Bash, Fortran, Swift, C.
+
+Nicht-funktionale Anforderungen (Anteil der Befragten)
+- Reliability 92 % (24), Maintainability 58 % (15), Safety 46 % (12), Security 38 % (10),
+  Performance 35 % (9), Availability 31 % (8), Usability 31 % (8).
+- Hinweis: Das Limit "bis zu drei" wurde nicht erzwungen. 6 Befragte (23 %) wählten mehr,
+  im Schnitt 3,3 Optionen, maximal 7.
+
+Projekt- und Betriebs-Constraints
+- Lange System-/Missionslaufzeit 46 % (12), Hardware 42 % (11), Legacy 35 % (9),
+  Zeitplan 31 % (8), Zertifizierung/Regulatorik 31 % (8), Organisation 27 % (7),
+  Wartung/Updates 19 % (5), Entwicklungskosten 15 % (4).
+- 25 von 26 wählten mindestens einen Constraint (Mittel 2,5).
+- 51 von 64 gewählten Constraints wurden begründet (80 %), insgesamt 51 Erklärungen von 20 Personen.
+- Häufigste Begründungsthemen: Verfügbarkeit/Langzeitbetrieb 10, Hardware/Ressourcen 9,
+  Normen/Compliance 8, Legacy/Wiederverwendung 7, Zeitplan 7, Organisation/Personal 6,
+  Budget/Personal 5, eingeschränkte Updates 4, Security 4, Datenvolumen 2.
+
+Prozessflexibilität (n = 24 mit Angabe)
+- Gering 4, mittel 10, hoch 6, vollständig 4, weiß nicht 2.
+- Mit gewähltem Zertifizierungs-Constraint: 25 % hohe oder volle Flexibilität (2 von 8);
+  ohne: 50 % (8 von 16). Richtung plausibel, aber bei dieser Fallzahl nur ein Hinweis.
+
+Einflussfaktoren auf die Prozesswahl (Freitext, 17 Antworten)
+- Normen/Regulatorik 5, Kunden/Partner 4, persönliche Präferenz/soziale Einflüsse 4,
+  Qualität/Security 4, Zeitplan 3, Mission/Projekt 2, Teamerfahrung 2, Tooling 1.
+
+Ausblick: Raumfahrt vs. andere Domänen (n = 23 mit Angabe)
+- Mehr Ähnlichkeit 17 (74 %), unverändert 2 (9 %), mehr Unterschied 4 (17 %).
+- Gründe (18 Antworten): Kosten-/Marktdruck 5, Technologie-/Praxistransfer 4,
+  eingeschränkte Anwendbarkeit von KI 4, KI/Automatisierung 3, Konservatismus 3,
+  Standardisierung 2, New Space 2, Offenheit/Kulturwandel 2, je 1 für Kritikalität/Normen,
+  gemeinsame Herausforderungen, Security/Souveränität, raumfahrtspezifische Randbedingungen.
+
+KI
+- Nutzung: täglich 6, wöchentlich 6, monatlich oder seltener 6, noch nicht aber geplant 1, nein 7.
+- Einstellung: positiv 13 (50 %), neutral/unsicher 7 (27 %), negativ 6 (23 %).
+- Jobbedrohung: nein 18 (69 %), unsicher 5 (19 %), ja 3 (12 %).
+- 18 von 25 haben im letzten Jahr KI-Kenntnisse gelernt (12 beruflich, 6 privat).
+- Einstellung hängt mit Nutzungshäufigkeit zusammen (Spearman rho = 0,59, n = 25):
+  11 von 12 regelmäßigen Nutzern sind positiv eingestellt. Berufserfahrung spielt kaum eine Rolle.
+
+
+2. SCHLUSSFOLGERUNGEN
+---------------------
+
+RQ4 (was unterscheidet Raumfahrt-Software heute)
+- Reliability ist fast Konsens (92 %). Safety liegt mit 46 % hinter Maintainability.
+- Die häufigsten Constraints sind strukturell: Laufzeit, Hardware, Legacy. Kosten stehen ganz unten.
+  Das passt zu Abschnitt 3.6 (stark begrenzter Speicher beim AGC): Die Hardware-Einschränkung
+  besteht fort, nur in anderer Form (strahlungsharte Hardware, wenig RAM/GPUs).
+- Normen (ECSS, DO-178, BSI Grundschutz) prägen die Prozesse. Das stützt die Aussagen zu formalen
+  Reviews und Traceability (PSS-05-0).
+- Zertifizierung scheint die Prozessflexibilität zu senken (siehe oben, nur Tendenz).
+
+RQ3 (Entwicklung)
+- Die Umfrage zeigt nur die Gegenwart. Zulässige Aussage: Die Constraints der Apollo-Ära bestehen fort,
+  aber die Prozesswahl ist nicht mehr durchgängig starr (58 % mittlere bis hohe Flexibilität).
+- Die Befragten erwarten weitere Annäherung an andere Domänen. Treiber: Kosten-/Marktdruck,
+  Technologietransfer, KI/Automatisierung, New Space, Standardisierung.
+
+Freitext
+- KI ist der umstrittenste Faktor: Alle vier Befragten, die mehr Unterschied erwarten, nennen die
+  eingeschränkte Anwendbarkeit von KI im Raumfahrtsektor (Cloud-Dienste, fehlende Trainingsdaten,
+  Souveränität). Drei andere nennen KI/Automatisierung als Konvergenztreiber.
+  KI taucht in 7 von 18 Begründungen auf.
+- Trägheit und Konvergenz schließen sich nicht aus: 3 der 17, die mehr Ähnlichkeit erwarten,
+  nennen zugleich das langsame Tempo der Branche.
+- Die KI-Einstellung sagt die Erwartung zur Annäherung nicht voraus (rho = 0,07).
+
+
+3. GRENZEN (so in der Arbeit benennen)
+--------------------------------------
+- Keine Aussage zur Einzigartigkeit: Es gibt keine Vergleichsgruppe außerhalb der Raumfahrt,
+  belegt sind nur wahrgenommene Merkmale.
+- Alle Befragten stammen vom DLR, n ist klein; Gruppenvergleiche sind Tendenzen ohne Signifikanz.
+- Anforderungen: Limit "bis zu drei" nicht erzwungen (siehe oben). Anteile an Befragten angeben.
+- Die Freitext-Codierung ist ein Entwurf (Codebook in src/codebook.py, Zuordnung in data/coding/).
+  Vor Verwendung prüfen und eine Teilmenge von einer zweiten Person codieren lassen.
+- Einzelne Fragen wurden übersprungen (z. B. Ausblick-Frage von 3 Personen).
+
+
+4. HINWEISE ZUR ARBEIT (Randkommentare)
+---------------------------------------
+- 2.4.2, 26 oder 44: 26 als Analysebasis verwenden, 44 als Rücklaufstatistik nennen
+  (44 geöffnet, 37 mit mindestens einer Seite, 26 abgeschlossen).
+- 2.4: KI-Teil behalten, kurz. KI ist inhaltlich relevant, da sie in den Freitexten zur Frage
+  nach Ähnlichkeit/Unterschied häufig auftaucht.
+- 2.4.5 Data Analysis noch ausformulieren: nur abgeschlossene Antworten, deskriptive Statistik,
+  thematische Codierung mit Codebook, Spearman-Korrelationen nur explorativ.
+
+
+5. WICHTIGE DIAGRAMME
+---------------------
+- 00_overview/response_flow.png                              Rücklauf
+- 10_non_functional_requirements/nfr_ranking.png            Anforderungen
+- 11_project_constraints/constraints_ranking.png            Constraints
+- 11b_constraint_explanations_OPEN/open_constraints_themes.png
+- 12_process_flexibility/flexibility_by_certification.png
+- 13_process_factors_OPEN/open_process_factors_themes.png
+- 14_similar_or_different/similar_or_different.png
+- 14b_similar_or_different_reasons_OPEN/open_similar_reason_oncoprint.png
+- 08_ai_stance/ai_stance_by_usage.png
